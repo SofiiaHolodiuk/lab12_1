@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Вибір мови</title>
+	</head>	
+	<body>
+		<script> 
+			"use strict";
+			document.write(
+				"<p style='text-align:center'>Використання оператора <strong>IF</strong> для вибору мови</p>"
+			);
+			
+			let lang = prompt("Введіть код мови (ua, en, pl, de):"); // Запитуємо користувача на код мови
+			
+			if (lang === "ua") {
+				document.write("Ваша мова: українська");
+			} else if (lang === "en") {
+				document.write("Ваша мова: англійська");
+			} else if (lang === "pl") {
+				document.write("Ваша мова: польська");
+			} else if (lang === "de") {
+				document.write("Ваша мова: німецька");
+			} else {
+				document.write("Мову невизначено");
+			}
+		</script>
+	</body>
+</html>
